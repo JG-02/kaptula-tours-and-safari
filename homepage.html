@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAPTULA TOURS AND SAFARIS</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  nav {
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  nav a:hover {
+    background-color: #666;
+  }
+  .container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+  .service {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .service h3 {
+    color: #333;
+  }
+  form {
+    margin-top: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  input[type="submit"]:hover {
+    background-color: #555;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="c:\Users\ADMIN\OneDrive\Documents\logo 10 JPG.jpg" alt="Lion Transport Logo">
+  </div>
+  <h1>KAPTULA TOURS AND SAFARIS</h1>
+</header>
+
+<nav>
+  <a href="#transfers">Transfers</a>
+  <a href="#booking">Booking</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+  <section id="transfers">
+    <h2>Transfers</h2>
+    <div class="service">
+      <h3>Moi to Diani</h3>
+      <p>Book your transfer from Moi Airport to Diani Beach. We offer comfortable rides in small cars, mini vans, and mini buses.</p>
+    </div>
+    <div class="service">
+      <h3>SGR to Diani</h3>
+      <p>Enjoy a hassle-free transfer from SGR Terminus to Diani Beach. Choose from our range of vehicles for your convenience.</p>
+    </div>
+    <div class="service">
+      <h3>Kaptula Tours and Safaris</h3>
+      <p>Explore the beauty of Diani Beach and Mombasa with our guided tours. Experience the wonders of nature with Kaptula Tours and Safaris.</p>
+    </div>
+  </section>
+
+  <section id="booking">
+    <h2>Booking</h2>
+    <form action="booking.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="route">Route:</label>
+      <select id="route" name="route">
+        <option value="Moi to Diani">Moi to Diani</option>
+        <option value="SGR to Diani">SGR to Diani</option>
+        <option value="Kaptula Tours and Safaris">Kaptula Tours and Safaris</option>
+      </select>
+      <label for="car">Car Type:</label>
+      <select id="car" name="car">
+        <option value="Small Car">Small Car</option>
+        <option value="Mini Van">Mini Van</option>
+        <option value="Mini Bus">Mini Bus</option>
+      </select>
+      <input type="submit" value="Book Now">
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>For bookings and inquiries, please contact us:</p>
+    <p>Email: info@liontransport.com</p>
+    <p>Phone: +254 123 456 789</p>
+  </section>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lion Transport</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    background-image: url('lion_logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  header {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  nav {
+    background-color: rgba(68, 68, 68, 0.9);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  nav a:hover {
+    background-color: #666;
+  }
+  .container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+Hide quoted text
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+  .service {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .service h3 {
+    color: #333;
+  }
+  form {
+    margin-top: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  input[type="submit"]:hover {
+    background-color: #555;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    
+    
+    </body>
+    </html>
+    
+    
+
+</body>
+</html>
